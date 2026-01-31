@@ -1,0 +1,12 @@
+.left-aligned {
+    margin-right: auto;
+}
+
+.right-aligned {
+    margin-left: auto;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}

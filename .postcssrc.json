@@ -1,6 +1,7 @@
 {
 	"plugins": {
 		"postcss-each": {},
+		"postcss-for": {},
 		"postcss-nesting": {}
 	}
 }

@@ -9,6 +9,7 @@ label#label {
 }
 
 input {
+    width: 100%;
     font-size: 1em;
     font-family: inherit;
     outline: none;

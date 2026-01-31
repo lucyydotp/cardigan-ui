@@ -1,5 +1,6 @@
-@layer cardigan.base, cardigan.typography, cardigan.components;
+@layer cardigan.base, cardigan.layout, cardigan.typography, cardigan.components;
 
 @import "./base.css";
+@import "./layout/index.css";
 @import "./typography.css";
 @import "./components/index.css";

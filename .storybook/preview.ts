@@ -2,6 +2,7 @@ import type { Preview } from "@storybook/web-components-vite"
 
 import "../src"
 import '@fontsource-variable/outfit/index.css'
+import './styles.css'
 
 const preview: Preview = {
 	parameters: {
@@ -11,8 +12,12 @@ const preview: Preview = {
 				date: /Date$/i,
 			},
 		},
+		docs: {
+			codePanel: true,
+		},
 		layout: "centered",
 	},
+	tags: ["autodocs"],
 }
 
 export default preview
