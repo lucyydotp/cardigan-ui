@@ -1,0 +1,32 @@
+input[type="checkbox"].toggle {
+	appearance: none;
+	vertical-align: middle;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 3em;
+	height: 1.5em;
+	background-color: var(--neutral-400);
+	border-radius: 1.5em;
+	cursor: e-resize;
+	transition: background-color 0.2s ease;
+
+	&:checked {
+		cursor: w-resize;
+		background-color: var(--color-500);
+
+		&::after {
+			transform: translateX(1.5em);
+		}
+	}
+
+	&::after {
+		border-radius: 1em;
+		content: " ";
+		display: inline-block;
+		width: 1em;
+		height: 1em;
+		margin: 0.25em;
+		background-color: var(--neutral-900);
+		transition: transform 0.2s cubic-bezier(0.79, -0.42, 0.18, 1.42);
+	}
+}

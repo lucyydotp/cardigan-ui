@@ -1,0 +1,6 @@
+@layer cardigan.typography {
+	:root {
+		font-family: "Outfit Variable", Helvetica, Arial, system-ui, sans-serif;
+		font-weight: 300;
+	}
+}

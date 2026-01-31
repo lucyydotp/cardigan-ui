@@ -1,0 +1,37 @@
+button, input[type="submit"] {
+	font-size: 1em;
+	border: none;
+	padding: 0.5em 1em;
+	border-radius: var(--border-radius);
+	background-color: var(--color-400);
+	color: var(--neutral-900);
+	font-family: inherit;
+	cursor: pointer;
+
+	&:hover {
+		background-color: var(--color-300);
+	}
+
+	&.subtle {
+		background-color: var(--color-200);
+		border: 2px solid var(--color-300);
+		color: var(--color-800);
+
+		&:hover {
+			background-color: var(--color-300);
+			color: var(--neutral-900);
+			border-color: var(--color-400);
+		}
+	}
+
+	&.outline {
+		background-color: transparent;
+		color: var(--color-500);
+		border: 2px solid var(--color-500);
+
+		&:hover {
+			background-color: var(--color-200);
+			color: var(--color-800);
+		}
+	}
+}

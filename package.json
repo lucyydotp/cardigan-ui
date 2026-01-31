@@ -1,0 +1,30 @@
+{
+	"name": "cardigan-ui",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsgo -b && vite build",
+		"preview": "vite preview",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@biomejs/biome": "^2.3.13",
+		"@fontsource-variable/outfit": "^5.2.8",
+		"@storybook/web-components-vite": "^10.2.0",
+		"@typescript/native-preview": "7.0.0-dev.20260124.1",
+		"lit-html": "^3.3.2",
+		"postcss-each": "^1.1.0",
+		"postcss-nesting": "^14.0.0",
+		"storybook": "^10.2.0",
+		"vite": "npm:rolldown-vite@7.2.5"
+	},
+	"overrides": {
+		"vite": "npm:rolldown-vite@7.2.5"
+	}
+}

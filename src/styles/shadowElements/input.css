@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+label#label {
+    display: block;
+    margin-left: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+input {
+    font-size: 1em;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5em 1em;
+    background-color: var(--neutral-200);
+    color: var(--neutral-900);
+
+    /*&:focus {*/
+    /*    !* Inset outline rather than a border *!*/
+    /*    outline: 2px solid var(--neutral-400);*/
+    /*    outline-offset: -2px;*/
+    /*}*/
+
+    &::placeholder {
+        color: var(--neutral-500);
+    }
+
+    &:disabled {
+        background-color: var(--neutral-300);
+        cursor: not-allowed;
+        color: var(--neutral-600);
+    }
+}
+
+input + span#underline {
+    display: block;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: " ";
+        transition: transform 0.2s var(--transition-curve-reverse);
+        transform: scaleX(0);
+        width: calc(100% - 2em);
+        margin-left: 1em;
+        bottom: 4px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: var(--neutral-500);
+    }
+}
+
+input:focus + span#underline:after {
+    transition: transform 0.2s var(--transition-curve-forward);
+    transform: scaleX(1);
+}
