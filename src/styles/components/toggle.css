@@ -7,11 +7,10 @@ input[type="checkbox"].toggle {
 	height: 1.5em;
 	background-color: var(--neutral-400);
 	border-radius: 1.5em;
-	cursor: e-resize;
+	cursor: pointer;
 	transition: background-color 0.2s ease;
 
 	&:checked {
-		cursor: w-resize;
 		background-color: var(--color-500);
 
 		&::after {

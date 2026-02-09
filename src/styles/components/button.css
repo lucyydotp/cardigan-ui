@@ -7,20 +7,35 @@ button, input[type="submit"] {
 	color: var(--neutral-900);
 	font-family: inherit;
 	cursor: pointer;
+	transition: transform 0.2s var(--transition-curve);
 
 	&:hover {
 		background-color: var(--color-300);
 	}
 
-	&.subtle {
+	&:focus-visible {
+		outline: 2px solid var(--blue-500);
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
+
+	&.bright {
+		background-color: var(--color-700);
+		color: var(--color-200);
+
+		&:hover {
+			background-color: var(--color-600);
+		}
+	}
+
+	&.secondary {
 		background-color: var(--color-200);
-		border: 2px solid var(--color-300);
 		color: var(--color-800);
 
 		&:hover {
 			background-color: var(--color-300);
-			color: var(--neutral-900);
-			border-color: var(--color-400);
 		}
 	}
 

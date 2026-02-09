@@ -9,7 +9,7 @@ const meta = {
 	argTypes: {
 		color: COLOR_ARGUMENT,
 		style: {
-			options: ["normal", "subtle", "outline"],
+			options: ["normal", "bright", "secondary", "outline"],
 			control: { type: "select" },
 		},
 	},
@@ -28,9 +28,15 @@ export const Normal: Story = {
 	},
 }
 
-export const Subtle: Story = {
+export const Bright: Story = {
 	args: {
-		style: "subtle",
+		style: "bright",
+	},
+}
+
+export const Secondary: Story = {
+	args: {
+		style: "secondary",
 	},
 }
 

@@ -43,7 +43,7 @@ input + span#underline {
     &:after {
         position: absolute;
         content: " ";
-        transition: transform 0.2s var(--transition-curve-reverse);
+        transition: transform 0.2s var(--transition-curve-forward), opacity 0.2s;
         transform: scaleX(0);
         width: calc(100% - 2em);
         margin-left: 1em;
@@ -51,10 +51,12 @@ input + span#underline {
         height: 2px;
         border-radius: 2px;
         background-color: var(--neutral-500);
+        opacity: 0;
     }
 }
 
 input:focus + span#underline:after {
-    transition: transform 0.2s var(--transition-curve-forward);
+    /*transition: transform 0.2s ease-in, opacity 0.2s ease-in;*/
     transform: scaleX(1);
+    opacity: 1;
 }

@@ -4,7 +4,7 @@ import css from "../styles/shadowElements/input.css?inline"
 const template = new HtmlTemplate(`
 <label for="input" id="label"></label>
 <input id="input">
-<span id="underline"></span>
+<span id="underline" role="presentation"></span>
 `)
 
 const stylesheet = new CSSStyleSheet()
